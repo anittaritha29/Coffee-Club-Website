@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Coffee Club — Premium South Indian café & restaurant. Breakfast, lunch, snacks, street food & drinks. ESTD 1980." />
+  <title>Coffee Club | South Indian Café & Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="smoke-layer" aria-hidden="true">
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+    <span class="smoke-particle"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="Coffee Club Home">
+      <span class="brand-logo-slot brand-logo-slot--nav">
+        <img
+          class="brand-logo-img"
+          src="images/logo-removebg-preview (1).png"
+          alt="Coffee Club"
+          onload="this.nextElementSibling?.classList.add('is-hidden')"
+          onerror="this.classList.add('is-hidden')"
+        />
+        <svg class="brand-logo-fallback logo-icon" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f5d78e" />
+              <stop offset="50%" stop-color="#c9a227" />
+              <stop offset="100%" stop-color="#8b6914" />
+            </linearGradient>
+            <filter id="logoGlow">
+              <feGaussianBlur stdDeviation="2" result="blur" />
+              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+          <path class="steam steam-1" d="M22 8 Q20 0 24 0 Q28 0 26 8" stroke="url(#goldGrad)" stroke-width="1.2" fill="none" opacity="0.7" />
+          <path class="steam steam-2" d="M32 4 Q30 -6 34 -6 Q38 -6 36 4" stroke="url(#goldGrad)" stroke-width="1.2" fill="none" opacity="0.85" />
+          <path class="steam steam-3" d="M42 8 Q40 0 44 0 Q48 0 46 8" stroke="url(#goldGrad)" stroke-width="1.2" fill="none" opacity="0.7" />
+          <path d="M12 28 C12 20 20 14 32 14 C44 14 52 20 52 28 L52 58 C52 68 44 74 32 74 C20 74 12 68 12 58 Z" stroke="url(#goldGrad)" stroke-width="2" fill="none" filter="url(#logoGlow)" />
+          <path d="M18 58 L18 62 C18 66 24 70 32 70 C40 70 46 66 46 62 L46 58" stroke="url(#goldGrad)" stroke-width="1.5" fill="none" opacity="0.6" />
+          <ellipse cx="32" cy="38" rx="14" ry="6" fill="url(#goldGrad)" opacity="0.15" />
+        </svg>
+      </span>
+     
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#categories">Menu</a>
+      <a href="#reviews">Reviews</a> <a href="#book-table" class="nav-book-mobile">Book Table</a>
+    </nav>
+    <a href="#book-table" class="btn btn-outline nav-cta">Book Table</a>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video
+        class="hero-video"
+        src="videos/coffee.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      ></video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-brand fade-up" style="--delay: 0.2s">
+        <span class="brand-logo-slot brand-logo-slot--hero">
+          <img
+            class="brand-logo-img"
+            src="images/logo-removebg-preview (1).png"
+            alt="Coffee Club"
+            onload="this.nextElementSibling?.classList.add('is-hidden')"
+            onerror="this.classList.add('is-hidden')"
+          />
+          <svg class="brand-logo-fallback hero-logo" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="heroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffe9a8" />
+                <stop offset="45%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#9a7b1a" />
+              </linearGradient>
+            </defs>
+            <path class="hero-steam hs1" d="M28 10 Q26 0 30 0 Q34 0 32 10" stroke="url(#heroGold)" stroke-width="1.5" fill="none" />
+            <path class="hero-steam hs2" d="M40 4 Q38 -8 42 -8 Q46 -8 44 4" stroke="url(#heroGold)" stroke-width="1.5" fill="none" />
+            <path class="hero-steam hs3" d="M52 10 Q50 0 54 0 Q58 0 56 10" stroke="url(#heroGold)" stroke-width="1.5" fill="none" />
+            <path d="M16 34 C16 24 26 16 40 16 C54 16 64 24 64 34 L64 72 C64 84 54 92 40 92 C26 92 16 84 16 72 Z" stroke="url(#heroGold)" stroke-width="2.5" fill="none" />
+            <path d="M22 72 L22 78 C22 84 30 88 40 88 C50 88 58 84 58 78 L58 72" stroke="url(#heroGold)" stroke-width="2" fill="none" opacity="0.5" />
+          </svg>
+        </span>
+        <p class="hero-venue">South Indian Café &amp; Restaurant</p>
+        <h1 class="hero-brand-name">Coffee Club</h1>
+        <p class="hero-estd">ESTD 1980</p>
+      </div>
+      <h2 class="hero-title fade-up" style="--delay: 0.5s">A Taste for Every Moment</h2>
+      <p class="hero-dayparts fade-up" style="--delay: 0.6s">Breakfast · Lunch · Snacks · Street Food · Drinks</p>
+      <p class="hero-subtitle fade-up" style="--delay: 0.7s">
+        From golden morning dosas and hearty midday meals to evening street flavours and freshly brewed chai &amp; coffee — tradition served all day.
+      </p>
+      <div class="hero-actions fade-up" style="--delay: 0.9s">
+        <a href="#categories" class="btn btn-glass">Explore Menu</a>
+        
+      </div>
+    </div>
+    <a href="#categories" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">Discover</span>
+    </a>
+  </section>
+
+  <section class="categories section" id="categories">
+    <div class="section-header">
+      <span class="section-tag">Curated Moments</span>
+      <h2 class="section-title">A Day at Coffee Club</h2>
+      <p class="section-desc">Select a moment — each course tells its own story.</p>
+    </div>
+    <div class="category-track" id="categoryTrack">
+      <article class="category-card" data-category="breakfast" tabindex="0">
+        <div class="category-img" style="--img: url('images/breakfast.png')"></div>
+        <div class="category-glass">
+          <span class="category-icon" aria-hidden="true">☀️</span>
+          <h3>Breakfast</h3>
+          <p>Golden dosas, ghee warmth, and the first light of tradition.</p>
+          <span class="category-cta">Explore →</span>
+        </div>
+      </article>
+      <article class="category-card" data-category="lunch" tabindex="0">
+        <div class="category-img" style="--img: url('images/lunch.png')"></div>
+        <div class="category-glass">
+          <span class="category-icon" aria-hidden="true">🍽</span>
+          <h3>Lunch</h3>
+          <p>Hearty thalis and aromatic rice — midday indulgence.</p>
+          <span class="category-cta">Explore →</span>
+        </div>
+      </article>
+      <article class="category-card" data-category="snacks" tabindex="0">
+        <div class="category-img" style="--img: url('images/snacks.png')"></div>
+        <div class="category-glass">
+          <span class="category-icon" aria-hidden="true">🌧</span>
+          <h3>Snacks</h3>
+          <p>Crispy comforts for rainy evenings and heartfelt conversations.</p>
+          <span class="category-cta">Explore →</span>
+        </div>
+      </article>
+      <article class="category-card" data-category="streetfood" tabindex="0">
+        <div class="category-img" style="--img: url('images/Street Food.jpg')"></div>
+        <div class="category-glass">
+          <span class="category-icon" aria-hidden="true">✦</span>
+          <h3>Street Food</h3>
+          <p>Bold street flavors, late-night comfort, and homestyle spice.</p>
+          <span class="category-cta">Explore →</span>
+        </div>
+      </article>
+      <article class="category-card" data-category="drinks" tabindex="0">
+        <div class="category-img" style="--img: url('images/Drinks.png')"></div>
+        <div class="category-glass">
+          <span class="category-icon" aria-hidden="true">🫖</span>
+          <h3>Drinks</h3>
+          <p>Chai whispers, filter coffee dreams, and golden hour calm.</p>
+          <span class="category-cta">Explore →</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="reviews section" id="reviews">
+    <div class="section-header">
+      <span class="section-tag">Voices</span>
+      <h2 class="section-title">Stories They Shared</h2>
+    </div>
+    <div class="reviews-slider">
+      <blockquote class="review-card active">
+        <p>"Every visit feels like returning to my grandmother's kitchen — warm, fragrant, unforgettable."</p>
+        <footer>— Priya M., Chennai</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"The ney roast alone is worth the journey. Cinematic flavors in a cinematic space."</p>
+        <footer>— Arjun K., Bangalore</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"The flavors are subtle yet powerful. Every bite feels thoughtfully designed."</p>
+        <footer>— Ananya R., Pune</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"The biryani here isn’t just food, it’s an experience layered with aroma and memory."</p>
+        <footer>— Imran K., Hyderabad</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Perfect place for slow evenings. The coffee and ambience make you lose track of time."</p>
+        <footer>— Daniel M., Bangalore</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Their snacks section feels like street corners brought into a warm, cozy space."</p>
+        <footer>— Neha S., Mumbai</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Simple food, but deeply satisfying. It reminds you why traditional cooking matters."</p>
+        <footer>— Rahul V., Chennai</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"The street food here has real character — bold, spicy, and unforgettable."</p>
+        <footer>— Aisha K., Delhi</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"I came for a quick bite, but stayed longer just for the peaceful atmosphere."</p>
+        <footer>— Vikram N., Kochi</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Every dish feels like it has a story behind it. Nothing feels ordinary here."</p>
+        <footer>— Sofia L., Goa</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Rainy evening vada and chai here — pure emotion on a plate."</p>
+        <footer>— Meera S., Kochi</footer>
+      </blockquote>
+    </div>
+    <div class="review-dots" id="reviewDots"></div>
+  </section>
+
+  <div class="showcase-panel" id="bookingPanel" aria-hidden="true">
+    <div class="showcase-backdrop" id="bookingBackdrop"></div>
+    <div class="showcase-inner" style="max-width: 600px; margin: 0 0 0 auto; background: #050505;">
+      <button class="showcase-close" id="bookingClose" aria-label="Close panel">✕</button>
+      
+      <div style="padding: 3rem 2rem; overflow-y: auto; height: 100%;">
+        
+        <div class="booking-panel" style="border: none; background: transparent; padding: 0; margin-bottom: 3rem;">
+          <h3 class="booking-panel-title" style="font-size: 2rem; text-align: center;">Table Reservation</h3>
+          <p style="color: var(--text-muted); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Reserve your seat & plan your luxury experience.
+          </p>
+          <form class="booking-form" id="bookingForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <div class="booking-form-row">
+              <input type="date" name="date" required />
+              <input type="time" name="time" required />
+            </div>
+            <select name="guests" required>
+              <option value="" disabled selected>Number of Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6+">6+ Guests</option>
+            </select>
+            <textarea name="message" placeholder="Special requests (optional)" rows="3"></textarea>
+            <button type="submit" class="btn btn-glow" style="width: 100%;">Confirm Booking</button>
+          </form>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent); margin-bottom: 3rem;" />
+
+        <div class="booking-panel" style="border: none; background: transparent; padding: 0; margin-bottom: 3rem;">
+          <h3 class="booking-panel-title" style="font-size: 2rem; text-align: center;">Share Your Experience</h3>
+          <p style="color: var(--text-muted); text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">
+            We would love to hear about your visit to Coffee Club.
+          </p>
+          <form class="booking-form" id="reviewForm">
+            <input type="text" id="reviewAuthor" placeholder="Your Name (e.g., Priya M.)" required />
+            <input type="text" id="reviewLocation" placeholder="Your City (e.g., Kochi)" required />
+            
+            <select id="reviewStars" required>
+              <option value="" disabled selected>Select Rating</option>
+              <option value="★★★★★">5 Stars ★★★★★</option>
+              <option value="★★★★">4 Stars ★★★★</option>
+              <option value="★★★">3 Stars ★★★</option>
+              <option value="★★">2 Stars ★★</option>
+              <option value="★">1 Star ★</option>
+            </select>
+            
+            <textarea id="reviewText" placeholder="Write your review here..." rows="4" required></textarea>
+            <button type="submit" class="btn btn-outline" style="width: 100%;">Submit Review</button>
+          </form>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent); margin-bottom: 3rem;" />
+
+        <div class="book-table-services">
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="utility-card" style="display: block; padding: 2rem 1.5rem;">
+            <span class="utility-icon" style="color: #25D366;">✦</span>
+            <h3>WhatsApp Order</h3>
+            <p>Order direct with a single message</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        
+        <h3>Coffee Club</h3>
+        <p class="footer-estd">ESTD 1980</p>
+      </div>
+      <div class="footer-col">
+        <h4>Address</h4>
+        <p>42 Heritage Lane, MG Road<br />Kochi, Kerala 682001</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>+91 98765 43210<br />hello@coffeeclub.in</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon – Sun: 7:00 AM – 11:00 PM<br />Kitchen closes 10:30 PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Feedback</h4>
+        <div id="openFooterReviewBtn" style="background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); padding: 1.2rem; border-radius: 4px; cursor: pointer; transition: all 0.3s ease; text-align: center;">
+          <span style="color: #d4af37; font-size: 1.1rem; display: block; margin-bottom: 0.3rem; font-weight: bold; letter-spacing: 1px;">★ Write a Review</span>
+          <p style="font-size: 0.8rem; margin: 0; color: #888;">Share your experience with us</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Coffee Club. Crafted with warmth.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="showcase-panel" id="showcasePanel" aria-hidden="true">
+    <div class="showcase-backdrop" id="showcaseBackdrop"></div>
+    <div class="showcase-inner" id="showcaseInner">
+      <button class="showcase-close" id="showcaseClose" aria-label="Close menu">✕</button>
+      <header class="showcase-header">
+        <span class="showcase-atmosphere" id="showcaseAtmosphere"></span>
+        <h2 class="showcase-title" id="showcaseTitle">Breakfast</h2>
+        <p class="showcase-subtitle" id="showcaseSubtitle"></p>
+      </header>
+      <div class="showcase-steam" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="dish-carousel" id="dishCarousel">
+        <div class="dish-track" id="dishTrack"></div>
+      </div>
+      <div class="showcase-nav">
+        <button class="nav-arrow nav-prev" id="dishPrev" aria-label="Previous dish">←</button>
+        <div class="dish-dots" id="dishDots"></div>
+        <button class="nav-arrow nav-next" id="dishNext" aria-label="Next dish">→</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-panel" id="dedicatedReviewPanel" aria-hidden="true">
+    <div class="showcase-backdrop" id="dedicatedReviewBackdrop"></div>
+    <div class="showcase-inner" style="max-width: 500px; margin: 0 0 0 auto; background: #050505; padding: 3rem 2rem;">
+      <button class="showcase-close" id="dedicatedReviewClose" aria-label="Close panel">✕</button>
+      <header class="showcase-header" style="text-align: center; margin-bottom: 2.5rem;">
+        <span class="showcase-atmosphere">Share Your Voice</span>
+        <h2 class="showcase-title" style="font-size: 2.2rem; color: #fff;">Review Us</h2>
+        <p class="showcase-subtitle" style="color: #888;">Your feedback will display instantly on our testimonials wall.</p>
+      </header>
+
+      <form class="booking-form" id="reviewForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <input type="text" id="reviewAuthor" placeholder="Your Name" required style="background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.15); padding: 1rem; color: #fff; font-family: inherit;" />
+          <input type="text" id="reviewLocation" placeholder="Your City" required style="background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.15); padding: 1rem; color: #fff; font-family: inherit;" />
+        </div>
+        
+        <select id="reviewStars" required style="width: 100%; background: #0c0c0c; border: 1px solid rgba(212,175,55,0.15); padding: 1rem; color: #fff; font-family: inherit; margin-bottom: 1rem;">
+          <option value="" disabled selected>Select Rating</option>
+          <option value="★★★★★">5 Stars ★★★★★</option>
+          <option value="★★★★">4 Stars ★★★★</option>
+          <option value="★★★">3 Stars ★★★</option>
+          <option value="★★">2 Stars ★★</option>
+          <option value="★">1 Star ★</option>
+        </select>
+        
+        <textarea id="reviewText" placeholder="How was the food, coffee, or ambience?..." rows="5" required style="width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(212,175,55,0.15); padding: 1rem; color: #fff; font-family: inherit; margin-bottom: 1.5rem; resize: vertical;"></textarea>
+        
+        <button type="submit" class="btn btn-glow" style="width: 100%; padding: 1rem; background: #d4af37; color: #000; font-weight: bold; border: none; cursor: pointer;">Submit Review</button>
+      </form>
+    </div>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
